@@ -20,3 +20,7 @@ Install according to the [Vagrant installation instructions](http://docs.vagrant
 	foreman run python db_setup.py
 	foreman run python db_seed.py
 	foreman start
+
+### Go to the browser
+
+	http://localhost:8080
