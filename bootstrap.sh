@@ -14,14 +14,3 @@ git checkout demo
 sudo pip install -r requirements.txt
 cp .env.example .env
 sed -i 's/localhost/testuser\:testpwd\@localhost/g' .env
-
-# Add a new test user and password
-: '
-sudo -u postgres createuser -P -s -e testuser
-sudo -u postgres createdb recordtrac
-
-cd /vagrant/recordtrac
-foreman run python db_setup.py
-foreman run python db_seed.py
-foreman start
-'
