@@ -14,8 +14,10 @@ Install according to the [Vagrant installation instructions](http://docs.vagrant
 	vagrant up
 	vagrant ssh
 	cd /vagrant/recordtrac
-
 	sudo -u postgres createuser -P -s -e testuser
+
+Here, it will prompt you to enter a password and confirm the password. The test password is "testpwd". Then, keep going...
+
 	sudo -u postgres createdb recordtrac
 	foreman run python db_setup.py
 	foreman run python db_seed.py
