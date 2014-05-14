@@ -10,7 +10,6 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 cd /vagrant
 git clone git://github.com/postcode/recordtrac.git
 cd recordtrac
-git checkout demo
 sudo pip install -r requirements.txt
 cp .env.example .env
 sed -i 's/localhost/testuser\:testpwd\@localhost/g' .env

@@ -10,7 +10,6 @@ Install according to the [Vagrant installation instructions](http://docs.vagrant
 
 	git clone https://github.com/vzvenyach/recordtrac-vagrant.git
 	cd recordtrac-vagrant
-	vagrant init precise64 http://files.vagrantup.com/precise64.box
 	vagrant up
 	vagrant ssh
 	cd /vagrant/recordtrac
